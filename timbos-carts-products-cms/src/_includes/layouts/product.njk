@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1>Timbo's Carts</h1></header>
+  <main>
+    <article>
+      <h2>{{ title }}</h2>
+      <img src="{{ image }}" alt="{{ title }}" style="max-width: 300px;">
+      <p><strong>Price:</strong> {{ price }}</p>
+      {{ content | safe }}
+      <div class="buy-button">{{ shopify_embed | safe }}</div>
+    </article>
+  </main>
+</body>
+</html>
